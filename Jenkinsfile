@@ -3,16 +3,16 @@ pipeline {
    environment 
     {
         VERSION = "${BUILD_NUMBER}"
-        PROJECT = 'nodeapp'
+        PROJECT = 'phpapp'
         IMAGE = "$PROJECT:$VERSION"
-        ECRURL = 'https://040200806866.dkr.ecr.ap-south-1.amazonaws.com'
-        ECRCRED = 'ecr:ap-south-1:awscredentials'
+        ECRURL = 'https://public.ecr.aws/q6y0g5d5/phpapp'
+        ECRCRED = 'ecr:ap-south-1:AwsCredentials'
     }   
     stages {
       stage('GetSCM') {
          steps {
             // Get some code from a GitHub repository
-            git 'https://github.com/jmstechhome/nodejsapp.git'
+            git ''
          }
          }
          stage('Image Build'){
