@@ -12,7 +12,7 @@ pipeline {
       stage('GetSCM') {
          steps {
             // Get some code from a GitHub repository
-            git ''
+            git 'https://github.com/sdbasha/ecr_deployment.git'
          }
          }
          stage('Image Build'){
