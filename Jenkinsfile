@@ -3,7 +3,7 @@ pipeline {
    environment 
     {
         VERSION = "${BUILD_NUMBER}"
-        PROJECT = 'phpapp'
+        PROJECT = 'web'
         IMAGE = "$PROJECT:$VERSION"
         ECRURL = 'https://public.ecr.aws/q6y0g5d5/phpapp'
         ECRCRED = 'ecr:ap-south-1:AwsCredentials'
