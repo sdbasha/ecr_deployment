@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: back-end
-          image: 845632109603.dkr.ecr.us-east-1.amazonaws.com/test
+          image: public.ecr.aws/q6y0g5d5/web
           ports:
             - containerPort: 3000
